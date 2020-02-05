@@ -56,7 +56,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f3f3f3;
+  background-color: #fcfafb;
   color: #c1c1c1;
   min-height: 100vh;
   height: auto;
@@ -106,7 +106,7 @@ p {
   transition: 0.1s;
 }
 
-.hero .col-md-2 {
+.hero .col-md-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,22 +119,27 @@ p {
   padding: 1px !important;
 }
 
-.hero-card {
-  height: 200px;
-  width: 100%;
-  border-radius: 4px;
-  opacity: 0.8;
+.hero-bg {
+  position: relative;
 }
 
-.hero-card img {
+.hero-bg img {
   width: 100%;
-  height: 200px;
-  border-radius: 4px;
 }
 
-.hero-card:hover {
-  opacity: 1;
-  cursor: pointer;
+.hero-bg-block {
+  position: absolute;
+  opacity: 0.7;
+  padding: 20px;
+  background-color: #f4bd00;
+  height: auto;
+  width: 50%;
+  z-index: 9;
+  bottom: 20%;
+  right: 0;
+  color: #fff;
+  text-align: right;
+  border-radius: 2px;
 }
 
 .contact {
