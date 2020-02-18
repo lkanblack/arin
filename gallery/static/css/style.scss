@@ -1,6 +1,7 @@
 $red:#f4bd00;
 $main:#fcfafb;
 $text: #fafafa;
+$dark-text: #111211;
 
 body, *{
     font-family: 'Open Sans', sans-serif;
@@ -80,6 +81,9 @@ p {
             }
         }
     }
+    &-tablet {
+        display: none;
+    }
     .col-md-3 {
         display: flex;
         align-items: center;
@@ -109,21 +113,19 @@ p {
             border-radius: 2px;
         }
     }
-    // &-card {
-    //     height: 200px;
-    //     width: 100%;
-    //     border-radius: 4px;
-    //     opacity: 0.8;
-    //     img {
-    //         width: 100%;
-    //         height: 200px;
-    //         border-radius: 4px;
-    //     }
-    //     &:hover  {
-    //         opacity: 1;
-    //         cursor: pointer;
-    //     }
-    // }
+}
+.repair {
+    padding: 100px 0;
+    color: $dark-text;
+    p {
+        margin: 15px 0px;
+    }
+    .col-md-4 {
+        img {
+            width: 100%;
+            border-radius: 2px;
+        }
+    }
 }
 .contact {
     border-top: 1px solid $red;
@@ -149,6 +151,44 @@ p {
         &:last-child {
             display: flex;
             justify-content: flex-end;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .header {
+        li {
+            display: none;
+        }
+    }
+    .hero {
+        
+        &-descr {
+            display: none;
+        }
+        &-tablet {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            ul {
+                list-style: none;
+                width: 100%;
+                padding: 0;
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                li {
+                    padding: 5px;
+                    margin: 10px 0px;
+                    border: 1px solid $red;
+                    border-radius: 2px;
+                
+                }
+            }
         }
     }
 }
