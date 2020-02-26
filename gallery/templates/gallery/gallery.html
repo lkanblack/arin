@@ -4,8 +4,9 @@
 {% load static %}
 
     <div class="gallery">
-        {% for gallery in gallerys %}
-        {{ gallerys }}
+        {% for post in gallerys %}
+           <h1>{{ post.title }}</h1>
+           <img src="{{ post.image.url}}" alt="{{ post.title }}">
         {% endfor %}
     </div>
 
