@@ -17,7 +17,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-1">
-                    <img class="logo" src="{% static 'img/arin.png' %}" alt="Airin">
+                    <a href="{% url 'gallery_list' %}"><img class="logo" src="{% static 'img/arin.png' %}" alt="Airin"></a>
                     <i class="burger fas fa-bars"></i>
                     <i class="close far fa-times-circle"></i>
                     <i class="dropdown fas fa-caret-down"></i>
@@ -30,11 +30,12 @@
                 <div class="col-sm-9 col-md-9">
                     <div class="menu">
                         <ul>
-                            <a href="#"><li>Главная</li></a>
-                            <a href="#"><li>Ремонт одежды</li></a>
-                            <a href="{% url 'gallery_detail' %}"><li>Галлерея</li></a>
-                            <a href="#"><li>Коллекции</li></a>
-                            <a href="#"><li>Контакт</li></a>
+                            <a href="{% url 'gallery_list' %}"><li>Esileht</li></a>
+                            <a href="#"><li>Riiete parandus</li></a>
+                            <a href="#"><li>Teenused</li></a>
+                            <a href="{% url 'gallery_detail' %}"><li>Gallerii</li></a>
+                            <!--<a href="#"><li>Коллекции</li></a>-->
+                            <a href="#"><li>Kontakt</li></a>
                         </ul>
                     </div>
                 </div>
