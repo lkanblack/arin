@@ -4,10 +4,19 @@
 {% load static %}
 
     <div class="gallery">
-        {% for post in gallerys %}
-           <h1>{{ post.title }}</h1>
-           <img src="{{ post.image.url}}" alt="{{ post.title }}">
-        {% endfor %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    {% for post in gallerys %}
+                       <a data-fancybox="gallery" href="{{ post.image.url}}">
+                           <img src="{{ post.image.url}}">
+                       </a>
+                       <p>{{ post.title }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 {% endblock %}
