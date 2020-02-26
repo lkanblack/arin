@@ -9,3 +9,7 @@ def gallery_list(request):
 def gallery_detail(request):
     gallerys = Post.objects.all()
     return render(request, 'gallery/gallery.html', {'gallerys': gallerys})
+
+def hind(request):
+    hinnad = Post.objects.all()
+    return render(request, 'gallery/hind.html', {'hinnad': hinnad})

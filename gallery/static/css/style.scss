@@ -151,7 +151,37 @@ p {
     }
 }
 .gallery {
-    padding: 200px 0px;
+    padding: 100px 0px;
+    .col-md-3 {
+        margin-bottom: 30px;
+        height: 100%;
+        display: inline;
+        img {
+            width: 100%;
+            height: 175px;
+        }
+    }
+}
+.price {
+    padding-top: 100px;
+    &-block {
+        padding: 10px;
+        border: 1px solid $red;
+        border-radius: 2px;
+        margin-bottom: 30px;
+        b {
+        }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 14px;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+    }
 }
 .contact {
     border-top: 1px solid $red;
@@ -309,10 +339,9 @@ p {
     p {
         font-size: 12px;
     }
-    #repair {
-        padding: 20px 0px;
-    }
-    img {
-        display: none;
+    .repair {
+        .container {
+            padding: 20px 150px 20px 10px;
+        }
     }
 }
