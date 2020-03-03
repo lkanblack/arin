@@ -17,7 +17,7 @@ p {
     background-color: $red;
     color:$text;
     font-size: 13px;
-    height: 40px;
+    height: auto;
     line-height: 40px;
     font-weight: 600;
     img {
@@ -66,6 +66,17 @@ p {
         float: right;
         padding-right: 10px;
     }
+    .col-md-2 {
+        display: flex;
+        align-items: center;
+    }
+    .col-md-9 {
+        display: flex;
+        align-items: center;
+        h1 {
+            margin-left: 20%;
+        }
+    }
 }
 .hero {
     display: flex;
@@ -105,7 +116,29 @@ p {
         }
     }
     &-tablet {
-        display: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        ul {
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            li {
+                padding: 5px;
+                margin: 10px 0px;
+                border: 1px solid $red;
+                border-radius: 2px;
+            
+            }
+        }
     }
     .col-md-3 {
         display: flex;
@@ -304,11 +337,6 @@ p {
         .col-sm-12 {
             display: flex;
             justify-content: space-between;
-        }
-    }
-    .hero {
-        &-tablet {
-            display: none;
         }
     }
     .repair {
