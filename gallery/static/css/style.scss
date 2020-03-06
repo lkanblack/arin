@@ -77,6 +77,9 @@ p {
             margin-left: 20%;
         }
     }
+    h4 {
+        display: none;
+    }
 }
 .hero {
     display: flex;
@@ -167,6 +170,24 @@ p {
             color: #fff;
             text-align: right;
             border-radius: 2px;
+        }
+        &-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            color: #111211;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: #fcfafb;
+            opacity: 0.9;
+            width: 60%;
+            text-align: left;
+            ul {
+                text-align: left;
+                opacity: 1;
+            }
         }
     }
 }
@@ -337,6 +358,18 @@ p {
         .col-sm-12 {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        .col-md-9 {
+            display: none;
+        }
+        h4 {
+            display: block;
+        }
+    }
+    .hero {
+        &-tablet {
+            display: none;
         }
     }
     .repair {

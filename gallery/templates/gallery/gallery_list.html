@@ -3,9 +3,9 @@
 {% block content %}
 {% load static %}
     <div class="hero">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="offset-1 col-md-3">
                     <!-- <div class="hero-descr">
                         <p>Õmblusateljee</p>
                         <h5>Airin Moda</h5>
@@ -18,14 +18,29 @@
                             <a href="#"><li>Riiete parandus</li></a>
                             <a href="{% url 'hinnad' %}"><li>Hinnad</li></a>
                             <a href="{% url 'gallery_detail' %}"><li>Gallerii</li></a>
-                            <a href="#"><li>maalid</li></a>
+                            <a href="#"><li>Maalid</li></a>
                             <a href="#contact"><li>Kontakt</li></a>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="hero-bg">
                         <img src="{% static 'img/hero_bg.jpg' %}" alt="">
+                        <div class="hero-bg-text">
+                            <h4>Мы рады Вас приветствовать на  странице нашего ателье!</h4>
+                            <h6>Наше ателье предлагает   услуги по ремонту одежды.</h6>
+                            <ul>
+                                <li>Укорачивание,подгонка по фигуре</li>
+                                <li>Замена молний</li>
+                                <li>Замена подкладки</li>
+                                <li>Ремонт шубы</li>
+                                <li>Шов-оверлок</li>
+                                <li>Плоскошовный шов для трикотажных изделий</li>
+                                <li>Пошив штор</li>
+                            </ul>
+                            <h6>Обращайтесь к нам и мы с удовольствием Вам поможем!</h6>
+                            <p>Мы находимся по адресу: Таллинн, ул. Парда 3 комн. 328, этаж 3.</p>
+                        </div>
                         <!-- <div class="hero-bg-block">
                             <h2>Airin Moda</h2>
                             <p>Kui vajad uue kleidi või mõne muu toote õmblemist, parandustöid, siis võta julgelt ühendust.</p>
