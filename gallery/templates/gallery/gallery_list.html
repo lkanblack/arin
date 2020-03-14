@@ -5,60 +5,27 @@
     <div class="hero">
         <div class="container-fluid">
             <div class="row">
-                <div class="offset-1 col-md-3">
-                    <!-- <div class="hero-descr">
-                        <p>Õmblusateljee</p>
-                        <h5>Airin Moda</h5>
-                        <a href="tel:+535 415 80">+372 535 415 80</a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div> -->
-                    <div class="hero-tablet">
-                        <ul>
-                            <a href="{% url 'gallery_list' %}"><li>Esileht</li></a>
-                            <a href="#"><li>Riiete parandus</li></a>
-                            <a href="{% url 'hinnad' %}"><li>Hinnad</li></a>
-                            <a href="{% url 'gallery_detail' %}"><li>Gallerii</li></a>
-                            <a href="#"><li>Maalid</li></a>
-                            <a href="#contact"><li>Kontakt</li></a>
-                        </ul>
-                    </div>
+                <div class="col-md-5">
+                        <div class="hero-bg-text">
+                                <h4>Мы рады Вас приветствовать на  странице нашего ателье!</h4>
+                                <h6>Наше ателье предлагает   услуги по ремонту одежды.</h6>
+                                <ul>
+                                    <li>Укорачивание,подгонка по фигуре</li>
+                                    <li>Замена молний</li>
+                                    <li>Замена подкладки</li>
+                                    <li>Ремонт шубы</li>
+                                    <li>Шов-оверлок</li>
+                                    <li>Плоскошовный шов для трикотажных изделий</li>
+                                    <li>Пошив штор</li>
+                                </ul>
+                                <h6>Обращайтесь к нам и мы с удовольствием Вам поможем!</h6>
+                                <p>Мы находимся по адресу: Таллинн, ул. Парда 3 комн. 328, этаж 3.</p>
+                            </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="hero-bg">
                         <img src="{% static 'img/hero_bg.jpg' %}" alt="">
-                        <div class="hero-bg-text">
-                            <h4>Мы рады Вас приветствовать на  странице нашего ателье!</h4>
-                            <h6>Наше ателье предлагает   услуги по ремонту одежды.</h6>
-                            <ul>
-                                <li>Укорачивание,подгонка по фигуре</li>
-                                <li>Замена молний</li>
-                                <li>Замена подкладки</li>
-                                <li>Ремонт шубы</li>
-                                <li>Шов-оверлок</li>
-                                <li>Плоскошовный шов для трикотажных изделий</li>
-                                <li>Пошив штор</li>
-                            </ul>
-                            <h6>Обращайтесь к нам и мы с удовольствием Вам поможем!</h6>
-                            <p>Мы находимся по адресу: Таллинн, ул. Парда 3 комн. 328, этаж 3.</p>
-                        </div>
-                        <!-- <div class="hero-bg-block">
-                            <h2>Airin Moda</h2>
-                            <p>Kui vajad uue kleidi või mõne muu toote õmblemist, parandustöid, siis võta julgelt ühendust.</p>
-                        </div> -->
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="repair" id="repair">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                        <h3>Riiete parandus</h3>
-                        <p>Meie ateljee töötajad võivad teha mistahes tegumoega rõivaste kvaliteetset parandamist. Tule meie juurde ja me aitame! Kahju on vananemise ja kulumise tõttu loobuda riidesemetest, mida oled nii kaua harjunud kandma ja mis Sulle nii palju tähendavad.</p>
-                    </div>
-                <div class="col-md-4">
-                    <img src="{% static 'img/repair_bg.jpeg' %}" alt="airin">
                 </div>
             </div>
         </div>
@@ -80,16 +47,24 @@
                         <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.7036150869321!2d24.760442451028283!3d59.438017581607184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935e0ccf3dc3%3A0x8c340a03f2b32197!2sParda%203%2C%20Kesklinna%20linnaosa%2C%20Kesklinna%2C%2010151%20Harju%20maakond!5e0!3m2!1sru!2see!4v1582711407832!5m2!1sru!2see" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12">
+                <div class="col-sm-6 col-md-6">
                     <div class="contact-infromation">
                         <p>Airin moda.</p>
                         <p>Tallinn, Parda 3, III  korrusel, tuba 328</p>
                         <a href="">airin@airin.ee</a>
                         <a href="tel:+535 415 80">+372 535 415 80</a>
-                        <div class="contact-infromation">
-                            <p>E-K,R 10:00 - 18:00</p>
-                            <p>N,L,P - Suletud</p>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="contact-infromation">
+                        <p>Esmaspäev: 10:00 - 18:00</p>
+                        <p>Teisipäev: 10:00 - 18:00</p>
+                        <p>Kolmapäev: 10:00 - 18:00</p>
+                        <p>Neljapäev: Suletud</p>
+                        <p>Reede: 10:00 - 18:00</p>
+                        <p>Laupäev: Suletud</p>
+                        <p>Pühapäev: Suletud</p>
+                        
                     </div>
                 </div>
             </div>

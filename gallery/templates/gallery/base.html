@@ -16,7 +16,7 @@
     <div class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-md-1">
+                <div class="col-sm-12">
                     <i class="burger fas fa-bars"></i>
                     <h4>Airin Moda OÜ</h4>
                     <i class="close far fa-times-circle"></i>
@@ -27,29 +27,24 @@
                         <a href="">RU</a>
                     </div>
                 </div>
-                <!-- <div class="col-md-12"></div> -->
-                <!-- <div class="col-sm-9 col-md-9">
+                <div class="col-md-3">
+                    <a href="{% url 'gallery_list' %}"><h1>Airin Moda OÜ</h1></a>
+                </div>
+                <div class="col-sm-9 col-md-7">
                     <div class="menu">
-                        <ul>
-                            <a href="{% url 'gallery_list' %}"><li>Esileht</li></a>
-                            <a href="#repair"><li>Riiete parandus</li></a>
-                            <a href="{% url 'hinnad' %}"><li>Hinnad</li></a>
-                            <a href="{% url 'gallery_detail' %}"><li>Gallerii</li></a>
-                            <!--<a href="#"><li>Коллекции</li></a>-->
-                            <!-- <a href="#contact"><li>Kontakt</li></a> -->
-                        <!-- </ul>
-                    </div> -->
-                <!-- </div> -->
-                <div class="col-md-9">
-                    <h1>Airin Moda OÜ</h1>
+                        <a href="{% url 'gallery_list' %}">Esileht</a>
+                        <a href="{% url 'hinnad' %}">Riiete parandus</a>
+                        <a href="{% url 'gallery_detail' %}">Gallerii</a>
+                        <a href="{% url 'gallery_detail' %}">Pood</a>
+                        <a href="#">Maalid</a>
+                        <a href="#contact">Kontakt</a>
+                    </div>
                 </div>
                 <div class="col-sm-2 col-md-2">
                     <div class="lang">
                         <a href="#">ET</a>
                         <span>/</span>
                         <a href="#">RU</a>
-                        <span>/</span>
-                        <a href="#">EN</a>
                     </div>
                 </div>
             </div>

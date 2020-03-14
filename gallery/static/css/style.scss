@@ -1,4 +1,4 @@
-$red:#f4bd00;
+$red:#ffc000;
 $main:#fcfafb;
 $text: #fafafa;
 $dark-text: #111211;
@@ -23,6 +23,15 @@ p {
     img {
         width: 24px;
 
+    }
+    .menu {
+        font-size: 16px;
+        display: flex;
+        height: auto;
+        a {
+            color: $dark-text;
+            margin-left: 20px;
+        }
     }
     .dropdown {
         display: none;
@@ -51,8 +60,6 @@ p {
         color: $text;
         &:hover {
             text-decoration: none;
-            color: #e1e1e1;
-            transition: 0.3s;
         }
     }
     ul {
@@ -63,14 +70,17 @@ p {
         }
     }
     .lang {
-        float: right;
-        padding-right: 10px;
+        font-size: 16px;
+        color: $dark-text;
+        a {
+            color: $dark-text;
+        }
     }
-    .col-md-2 {
+    .col-md-2, .col-md-3 {
         display: flex;
         align-items: center;
     }
-    .col-md-9 {
+    .col-md-7 {
         display: flex;
         align-items: center;
         h1 {
@@ -180,9 +190,6 @@ p {
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            background-color: #fcfafb;
-            opacity: 0.9;
-            width: 60%;
             text-align: left;
             ul {
                 text-align: left;
@@ -220,10 +227,13 @@ p {
     padding-top: 100px;
     &-block {
         padding: 10px;
-        border: 1px solid $red;
+        border: 1px solid $dark-text;
         border-radius: 2px;
         margin-bottom: 30px;
-        b {
+        hr {
+            margin: 2px;
+            background-color: $red;
+            opacity: 0.3;
         }
         &-row {
             display: flex;
@@ -239,6 +249,9 @@ p {
 }
 .contact {
     border-top: 1px solid $red;
+    p {
+        font-size: 18px;
+    }
     &-map {
         margin:30px 0;
     }
@@ -341,16 +354,6 @@ p {
             width: 40px;
             display: flex;
             justify-content: flex-end;
-        }
-        .menu {
-            flex-direction: column;
-            height: auto;
-            ul {
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                background-color: $red;
-            }
         }
         .lang {
             display: none;
