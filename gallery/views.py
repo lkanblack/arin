@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Post
+from .models import Shop
+from .models import Paint
 
 # Create your views here.
 def gallery_list(request):
@@ -21,3 +23,12 @@ def rus_page(request):
 def remont(request):
     remonts = Post.objects.all()
     return render(request, 'gallery/hind_rus.html', {'remonts': remonts})
+
+def shop(request):
+    shops = Shop.objects.all()
+    return render(request, 'gallery/shop.html', {'shops': shops})
+
+
+def paint(request):
+    paints = Paint.objects.all()
+    return render(request, 'gallery/maalid.html', {'paints': paints})
