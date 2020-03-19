@@ -13,3 +13,11 @@ def gallery_detail(request):
 def hind(request):
     hinnad = Post.objects.all()
     return render(request, 'gallery/hind.html', {'hinnad': hinnad})
+
+def rus_page(request):
+    russ = Post.objects.all()
+    return render(request, 'gallery/rus.html', {'russ': russ})
+
+def remont(request):
+    remonts = Post.objects.all()
+    return render(request, 'gallery/hind_rus.html', {'remonts': remonts})

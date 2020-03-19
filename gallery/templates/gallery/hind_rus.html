@@ -1,0 +1,249 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ff280352c.js" crossorigin="anonymous"></script>
+    <title>Airin Moda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+      
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <i class="burger fas fa-bars"></i>
+                    <h4>Airin Moda OÜ</h4>
+                    <i class="close far fa-times-circle"></i>
+                    <i class="dropdown fas fa-caret-down"></i>
+                    <div class="lang-drop">
+                        <a href="">ET</a>
+                        <a href="">RU</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a href="{% url 'rus' %}"><h1>Airin Moda OÜ</h1></a>
+                </div>
+                <div class="col-sm-9 col-md-7">
+                    <div class="menu">
+                        <a href="{% url 'rus' %}">Главная</a>
+                        <a href="{% url 'hinnad' %}">Ремонт одежды</a>
+                        <a href="{% url 'gallery_detail' %}">Галерея</a>
+                        <a href="{% url 'gallery_detail' %}">Магазин</a>
+                        <a href="#">Картины</a>
+                        <a href="{% url 'gallery_list' %}">Контакт</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="lang">
+                        <a href="{% url 'gallery_list' %}">ET</a>
+                        <span>/</span>
+                        <a href="{% url 'rus' %}">RU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="price-block">
+                        <b>Укоротить изделие (без подкл.)</b>
+                        <div class="price-block-row"><p>Брюки (строчка)</p><span>5.-</span></div>
+                        <hr>
+                        <div class="price-block-row"><p>Брюки (мажеты,подшить вручную, тесьма)</p><span>10.-</span></div>
+                        <hr>
+                        <div class="price-block-row"><p>Джинсы (оригинальный низ)</p><span>10.-</span></div>   
+                        <hr>
+                        <div class="price-block-row"><p>Юбка (исправление шлицы)</p><span>7.-</span></div> 
+                        <hr>  
+                        <div class="price-block-row"><p>Платье (до 1м)</p><span>7.-</span> <p>(от 1м)</p><span>10.-</span></div> 
+                        <hr>    
+                        <div class="price-block-row"><p>Блузка</p><p>(строчка)</p> <span>5.-</span></div> 
+                        <hr> 
+                        <div class="price-block-row"><p>Пиджак</p><span>10.-</span></div>    
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Укоротить изделие (на подкладке)</b>
+                            <div class="price-block-row"><p>Брюки (спортивные)</p><span>7.-</span></div>
+                            <hr>
+                            <div class="price-block-row"><p>Брюки (лыжные с молн.)</p><span>15.-</span></div>
+                            <hr>
+                            <div class="price-block-row"><p>Джинсы (пояс, молния)</p><span>13.-</span></div> 
+                            <hr>  
+                            <div class="price-block-row"><p>Юбка</p><span>10.-</span></div>   
+                            <hr>
+                            <div class="price-block-row"><p>Платье</p><p>(до 1м)</p><span>10.-</span> <p>(от 1м)</p><span>15.-</span></div> 
+                            <hr>    
+                            <div class="price-block-row"><p>Пиджак</p><span>13.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Плащ</p><span>13.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пальто</p><span>13.-</span><p>(шлица)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Шуба</p><span>19.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Рукава укоротить / удлинить</b>
+                            <div class="price-block-row"><p>Блузка</p><p>(строчка)</p><span>5.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Блузка</p><p>(строчка)</p><span>13.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пиджак</p><span>10.-</span><p>(шлица)</p><span>15.-</span></div>   
+                            <hr>       
+                            <div class="price-block-row"><p>Куртка</p><span>13.-</span><p>(кожа)</p><span>15.-</span></div> 
+                            <hr>  
+                            <div class="price-block-row"><p>Пальто</p><span>10.-</span><p>(шлица.)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Шуба</p><span>19.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Заузить / Расширить</b>
+                            <div class="price-block-row"><p>Брюки</p><p>(вставить клин в бока + пояс)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Брюки</p><p>(заузить по бокам + пояс)</p><span>12.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Брюки</p><p>(заузить от колена + низ)</p><span>7.-</span></div>   
+                            <hr>    
+                            <div class="price-block-row"><p>Юбка</p><p>(заузить бока + пояс)</p><span>10.-</span></div>   
+                            <hr>     
+                            <div class="price-block-row"><p>Юбка</p><p>(заузить бока + низ + подкладка + низ)</p><span>15.-</span></div>   
+                            <hr>  
+                            <div class="price-block-row"><p>Блузка</p><p>(от)</p><span>5.-</span></div>   
+                            <hr>  
+                            <div class="price-block-row"><p>Платье</p><p>(от)</p><span>10.-</span></div>   
+                            <hr>  
+                            <div class="price-block-row"><p>Пиджак</p><p>(от)</p><span>10.-</span></div>   
+                            <hr>  
+                            <div class="price-block-row"><p>Куртка</p><p>(от)</p><span>15.-</span></div>   
+                            <hr>  
+                            <div class="price-block-row"><p>Пальто</p><p>(от)</p><span>15.-</span></div>   
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Замена молнии</b>
+                            <div class="price-block-row"><p>Брюки</p><span>7.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Юбка</p><span>7.-</span><p>(на подкл.)</p><span>10.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Платье</p><span>7.-</span><p>(на подкл.)</p><span>12.-</span></div>   
+                            <hr>       
+                            <div class="price-block-row"><p>Джемпер</p><span>13.-</span></div> 
+                            <hr>  
+                            <div class="price-block-row"><p>Куртка</p><span>13.-</span><p>(на подкл.)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Карман</p><span>10.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Рукав (шт.)</p><span>7.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Замена подкладки</b>
+                            <div class="price-block-row"><p>Брюки</p><p>(передн.часть)</p> <span>25.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Юбка</p><p>(по бокам)</p><span>13.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Юбка</p><span>25.-</span></div>   
+                            <hr>       
+                            <div class="price-block-row"><p>Платье</p><span>25.-</span></div> 
+                            <hr>  
+                            <div class="price-block-row"><p>Пиджак</p><span>30.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Куртка</p><span>30.-</span><p>(ватин)</p><span>35.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пальто</p><span>40.-</span><p>(ватин)</p><span>45.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Шуба</p><span>45.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Замена воротника</b>
+                            <div class="price-block-row"><p>Рубашка</p><p>(от)</p> <span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Блузка</p><p>(от)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Платье</p><p>(от)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пиджак</p><p>(от)</p><span>17.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пальто</p><p>(от)</p><span>15.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Шуба</p><p>(от)</p><span>45.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Молнии</b>
+                            <div class="price-block-row"><p>Брючные</p><span>2.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Потайные</p><p> <25 см </p><span>2.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Потайные</p><p> >25 см </p><span>3.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Металлические</p><p> <50 см </p><span>5.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Металлические</p><p> >50 см </p><span>8.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Пластмассовые</p><p> <50 см </p><span>3.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Металлические</p><p> >50 см </p><span>5.-</span></div>  
+                        </div>
+                </div>
+                <div class="col-md-6">
+                        <div class="price-block">
+                            <b>Дополнительные работы</b>
+                            <div class="price-block-row"><p>Оверлок</p><p>(1м)</p><span>1,40.-</span></div>  
+                            <hr>
+                            <div class="price-block-row"><p>Занавески</p><p>(1м)</p><span>1,40.-</span></div>  
+                            <hr> 
+                            <div class="price-block-row"><p>Заплатки</p><span>7.-</span></div>  
+                            <hr> 
+                            <div class="price-block-row"><p>Замена язычка молнии</p><span>7.-</span></div>  
+                            <hr> 
+                            <div class="price-block-row"><p>Язычок молнии</p><span>1.-</span></div>  
+                            <hr> 
+                            <div class="price-block-row"><p>Пришить крючок на шубу </p><span>4.-</span></div>  
+                            <hr> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <p>Airin Moda 2020.</p>
+                </div>
+                <div class="col-6">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

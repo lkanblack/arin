@@ -37,14 +37,14 @@
                         <a href="{% url 'gallery_detail' %}">Gallerii</a>
                         <a href="{% url 'gallery_detail' %}">Pood</a>
                         <a href="#">Maalid</a>
-                        <a href="#contact">Kontakt</a>
+                        <a href="{% url 'gallery_list' %}">Kontakt</a>
                     </div>
                 </div>
                 <div class="col-sm-2 col-md-2">
                     <div class="lang">
-                        <a href="#">ET</a>
+                        <a href="{% url 'gallery_list' %}">ET</a>
                         <span>/</span>
-                        <a href="#">RU</a>
+                        <a href="{% url 'rus' %}">RU</a>
                     </div>
                 </div>
             </div>
