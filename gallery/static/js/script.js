@@ -6,10 +6,7 @@ function burger(){
         menu = document.querySelector('.menu');
 
     burger.addEventListener('click', function(){
-        menu.style.display = "flex";
-        burger.style.display = "none";
-        close.style.display = "flex";
-        dropdown.style.display = "none";
+        menu.classList.toggle('menu-open');
     });
     close.addEventListener('click', function(){
         menu.style.display = "none";

@@ -1,0 +1,86 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ff280352c.js" crossorigin="anonymous"></script>
+    <title>Airin Moda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>    
+<body>
+    
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <i class="burger fas fa-bars"></i>
+                    <h4>Airin Moda OÜ</h4>
+                    <i class="close far fa-times-circle"></i>
+                    <i class="dropdown fas fa-caret-down"></i>
+                    <div class="lang-drop">
+                        <a href="">ET</a>
+                        <a href="">RU</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a href="{% url 'rus' %}"><h1>Airin Moda OÜ</h1></a>
+                </div>
+                <div class="col-sm-9 col-md-7">
+                    <div class="menu">
+                        <a href="{% url 'rus' %}">Главная</a>
+                        <a href="{% url 'remont' %}">Ремонт одежды</a>
+                        <a href="{% url 'gallery_detail' %}">Галерея</a>
+                        <a href="{% url 'gallery_detail' %}">Магазин</a>
+                        <a href="#">Картины</a>
+                        <a href="{% url 'gallery_list' %}">Контакт</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="lang">
+                        <a href="{% url 'gallery_list' %}">ET</a>
+                        <span>/</span>
+                        <a href="{% url 'rus' %}">RU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="container-fluid">
+            <div class="row">
+                {% for post in gallerys %}
+                    <div class="col-md-3">
+                            <a data-fancybox="gallery" href="{{ post.image.url}}">
+                                <img src="{{ post.image.url}}">
+                            </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Airin Moda 2020.</p>
+                    </div>
+                    <div class="col-6">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="{% static 'js/script.js' %}"></script>
+      </body>
+    </html>

@@ -32,3 +32,8 @@ def shop(request):
 def paint(request):
     paints = Paint.objects.all()
     return render(request, 'gallery/maalid.html', {'paints': paints})
+
+
+def gallery_rus(request):
+    gallerys = Paint.objects.all()
+    return render(request, 'gallery/gallery_rus.html', {'gallerys': gallerys})
